@@ -1,8 +1,0 @@
-global:
-  scrape_interval: 5s  # ดึงข้อมูลทุก 5 วินาที
-
-scrape_configs:
-  - job_name: 'kafka-lag-exporter'
-    metrics_path: '/metrics'
-    static_configs:
-      - targets: ['kafka-lag-exporter:8000']
